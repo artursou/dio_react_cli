@@ -23,7 +23,7 @@ export const ErrorText = styled.p`
 
 export const InputText = styled.input`
     background-color: transparent;
-    color: #FFFFFF;
+    color: #fd0000;
     width: 100%;
     border: 0;
     height: 30px;

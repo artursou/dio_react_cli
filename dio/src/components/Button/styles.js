@@ -5,6 +5,7 @@ export const ButtonContainer = styled.button`
     border-radius: 22px;
     position: relative;
 
+
     color: #FFFF;
     padding: 2px 12px;
     min-width: 120px;
