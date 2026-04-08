@@ -1,5 +1,5 @@
 import React from "react";
-import { FiThumbsUp } from "react-icons/fi";
+
 
 import {
   CardContainer,
@@ -22,7 +22,7 @@ const Card = () => {
             <h4>Artur Souza Santos</h4>
             <p>Há 8 minutos</p>
           </div>
-        </UserInfo>
+        </UserInfo> 
 
         <PostInfo>
           <h4>Projeto para curso de HTML e CSS</h4>
@@ -34,11 +34,8 @@ const Card = () => {
 
         <HasInfo>
           <h4>#HTML #CSS #JavaScript</h4>
-          <p>
-            <FiThumbsUp /> 16
-          </p>
-        </HasInfo>
-      </Content>
+        </HasInfo> 
+      </Content> 
     </CardContainer>
   );
 };
