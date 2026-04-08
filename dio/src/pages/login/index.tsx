@@ -19,6 +19,7 @@ import {
   TitleLogin,
   Wrapper,
 } from "./styles";
+import { IFormData, Iitem } from "./types";
 
 const schema = yup
   .object({
@@ -39,7 +40,7 @@ const Login = () => {
     mode: "onChange",
   });
 
-  const onSubmit = async (formData) => {
+  const onSubmit = async (formData: IFormData) => {
     try {
       const { data } = await api.get("/users", {
         params: {
@@ -48,7 +49,7 @@ const Login = () => {
       });
 
       const user = data.find(
-        (item) => item.senha === formData.password.trim()
+        (item: Iitem) => item.senha === formData.password.trim()
       );
 
       console.log("Retorno api", data);
